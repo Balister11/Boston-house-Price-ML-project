@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Boston House Price Prediction</title>
+</head>
+<body>
+    <h1>Boston House Price Prediction</h1>
+    <form action="/predict" method="POST">
+        {% if price %}
+        <h3>Predicted Price: ${{ price }}</h3>
+        {% endif %}
+        <p>CRIM: <input type="text" name="CRIM" step="any"></p>
+        <p>ZN: <input type="text" name="ZN" step="any"></p>
+        <p>INDUS: <input type="text" name="INDUS" step="any"></p>
+        <p>CHAS: <input type="text" name="CHAS" step="any"></p>
+        <p>NOX: <input type="text" name="NOX" step="any"></p>
+        <p>RM: <input type="text" name="RM" step="any"></p>
+        <p>AGE: <input type="text" name="AGE" step="any"></p>
+        <p>DIS: <input type="text" name="DIS" step="any"></p>
+        <p>RAD: <input type="text" name="RAD" step="any"></p>
+        <p>TAX: <input type="text" name="TAX" step="any"></p>
+        <p>PTRATIO: <input type="text" name="PTRATIO" step="any"></p>
+        <p>B: <input type="text" name="B" step="any"></p>
+        <p>LSTAT: <input type="text" name="LSTAT" step="any"></p>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
